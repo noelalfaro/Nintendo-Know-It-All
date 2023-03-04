@@ -1,11 +1,20 @@
 import { useState } from 'react'
 
 import './App.css'
+import Title from './components/Title'
+import Flashcards from './components/Flashcards'
 
 function App() {
 
   return (
-    <h1>Flashcards Project</h1>
+    <>
+
+    <Title></Title>
+
+    <Flashcards></Flashcards>
+
+
+    </>
   )
 }
 

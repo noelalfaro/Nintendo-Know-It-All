@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+body{
+    background-color: #6B88FF;
+    background-image: url('./images/SuperMarioBackdrop.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+
+.titleSection{
+    height: fit-content;
+    max-height: 40%;
+    width: 100%;
+    /* border: 2px solid black; */
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #161616;
+    color: #eeeeee;
+    padding: 1em;
+    border: 3px solid #eeeeee;
+    line-height: 1.2;
+}
+
+.titleSection p {
+    line-height: 1.5em;
+    font-size: 18px;
+}
+
+
+
+
+.flashcardSection{
+    /* background-color: red; */
+    box-sizing: border-box;
+    /* border: 3px solid black; */
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.flashcardContainer{
+    width: 50%;
+    height: 80%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #161616;
+    /* justify-content: center; */
+    align-items: center;
+    color: #eeeeee;
+    padding: 1em;
+    border: 3px solid #eeeeee;
+    line-height: 1.2;
+    perspective: 1000px;
+    transition: all 0.8s;
+    cursor: pointer;
+}
+
+/* .flashcardContainer:active{
+    transform: rotateX(180deg);
+} */
+
+.flashcardQuestion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+
+
+.flashcardContainer img{
+    height: 150px;
+}
+
+
+.rank{
+    height: 10%;
+    /* border: 3px solid #eeeeee; */
+}
+
+
+
+.buttonContainer{
+    width: 40%;
+    height: 30%;
+    /* background-color: #eeeeee; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:80px;
+    /* justify-content: space-evenly; */
+}
+
+
+
+
+.buttonContainer button{
+    background-color: #FFA248;
+    cursor: pointer;
+    border: none;
+    border-radius: 1px;
+    height: 80px;
+    width: 80px;
+    border: 5px solid #E45E10;
+    font-family:'Press Start 2P', cursive;
+    font-size: 14px;
+    color: #E65E15;
+    text-shadow: 1px 1px #161616,
+    2px 2px#161616,
+    3px 3px #161616;
+    transition: all .2s step-start;
+}
+
+
+.buttonContainer button:hover{
+ transform: scale(102%);
+}
+
+.buttonContainer button:active{
+    transform: scale(96%);
+}
+
+.countBox{
+    background-color: #FFA248;
+    border: 5px solid #E45E10;
+    height: 80px;
+    min-width: 80px;
+    width: fit-content;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Press Start 2P', cursive;
+    font-size: 28px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsiveness for mobile version */
+
+
+
+/* Medium Mobile */
+@media only screen and (max-width: 395px){
+
+    .titleSection{
+        height: fit-content;
+        padding: 5px;
+        max-height: 45vh;
+    }
+
+    .titleSection h1{
+        font-size: 1em;
+        /* line-height: 1.2; */
+    }
+
+    .titleSection p{
+        font-size: 12px;
+    }
+
+}
+
+/* Responsiveness: larger mobile */
+@media only screen and (max-width: 600px){
+
+    body{
+        background: url('./images/SuperMarioBackdrop.jpg')no-repeat top bottom center ;
+    }
+
+
+    .titleSection{
+        height: fit-content;
+        padding: .1em;
+    }
+
+
+    .titleSection h1{
+        font-size: 1.5em;
+        line-height: 1.2;
+    }
+
+    .titleSection p{
+        font-size: 12px;
+    }
+
+
+    .buttonContainer{
+        gap:40px;
+    }
+
+
+}
+
+
+/* Responsiveness: Tablet */
+@media only screen and (max-width: 768px){
+    .titleSection{
+        height: fit-content;
+        padding: 1em;
+    }
+
+
+
+    .flashcardContainer{
+        width: 100%;
+    }
+}
+
+
+
+
+/* Responsiveness: 4k desktop edgecase */
+@media only screen and (max-width: 2560px){
+    body{
+        background: url('./images/SuperMarioBackdrop.jpg') center bottom fixed;
+    }
+}
