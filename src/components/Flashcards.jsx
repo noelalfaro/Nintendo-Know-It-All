@@ -49,7 +49,7 @@ export default function Flashcards() {
                 {currentCard.image}
             </div>
             
-            {currentCard == FlashCards[0] ? "": <div className='rank'>Difficulty: {currentCard.difficulty}</div>}
+            {currentCard == FlashCards[0] ? "" : <div className='rank'>Difficulty: {currentCard.difficulty}</div>}
             
             
         </div>

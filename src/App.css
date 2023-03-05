@@ -117,7 +117,7 @@ body{
     font-size: 14px;
     color: #E65E15;
     text-shadow: 1px 1px #161616,
-    2px 2px#161616,
+    2px 2px #161616,
     3px 3px #161616;
     transition: all .2s step-start;
 }
@@ -195,7 +195,7 @@ body{
 @media only screen and (max-width: 600px){
 
     body{
-        background: url('./images/SuperMarioBackdrop.jpg')no-repeat top bottom center ;
+        background: url('./images/SuperMarioBackdrop.jpg') no-repeat top bottom center ;
     }
 
 
