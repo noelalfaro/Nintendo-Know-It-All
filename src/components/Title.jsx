@@ -28,7 +28,7 @@ export default function Title() {
 
         <TypeAnimation
             sequence={[8000,
-                'Test your Nintendo knowledge with this flashcard quiz game!'
+                'Test your Nintendo knowledge with these 10 flashcards!'
             ]}
             wrapper="p"
             cursor={false}

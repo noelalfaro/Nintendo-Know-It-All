@@ -112,6 +112,7 @@ body{
     border-radius: 1px;
     height: 80px;
     width: 80px;
+    min-width: fit-content;
     border: 5px solid #E45E10;
     font-family:'Press Start 2P', cursive;
     font-size: 14px;
