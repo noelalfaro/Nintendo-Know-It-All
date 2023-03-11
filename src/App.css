@@ -1,249 +1,245 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
-
-body{
-    background-color: #6B88FF;
-    background-image: url('./images/SuperMarioBackdrop.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    
+body {
+  background-color: #6b88ff;
+  background-image: url("./images/SuperMarioBackdrop.jpg") no-repeat center
+    center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-.titleSection{
-    height: fit-content;
-    max-height: 40%;
-    width: 100%;
-    /* border: 2px solid black; */
-    box-sizing: border-box;
-    font-family: 'Press Start 2P', cursive;
-    background-color: #161616;
-    color: #eeeeee;
-    padding: 1em;
-    border: 3px solid #eeeeee;
-    line-height: 1.2;
+.titleSection {
+  height: fit-content;
+  max-height: 40%;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Press Start 2P", cursive;
+  background-color: #161616;
+  color: #eeeeee;
+  padding: 1em;
+  border: 3px solid #eeeeee;
+  line-height: 1.2;
 }
 
 .titleSection p {
-    line-height: 1.5em;
-    font-size: 18px;
+  line-height: 1.5em;
+  font-size: 18px;
 }
 
-
-
-
-.flashcardSection{
-    /* background-color: red; */
-    box-sizing: border-box;
-    /* border: 3px solid black; */
-    height: 60%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    justify-content: center;
-    align-items: center;
+.flashcardSection {
+  box-sizing: border-box;
+  height: 60%;
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
 }
 
-
-.flashcardContainer{
-    width: 50%;
-    height: 80%;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    font-family: 'Press Start 2P', cursive;
-    background-color: #161616;
-    /* justify-content: center; */
-    align-items: center;
-    color: #eeeeee;
-    padding: 1em;
-    border: 3px solid #eeeeee;
-    line-height: 1.2;
-    perspective: 1000px;
-    transition: all 0.8s;
-    cursor: pointer;
+.flashcardContainer {
+  width: 50%;
+  height: 80%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: "Press Start 2P", cursive;
+  background-color: #161616;
+  align-items: center;
+  color: #eeeeee;
+  padding: 1em;
+  border: 3px solid #eeeeee;
+  line-height: 1.2;
+  perspective: 1000px;
+  transition: all 0.8s;
+  cursor: pointer;
 }
 
-/* .flashcardContainer:active{
-    transform: rotateX(180deg);
-} */
-
-.flashcardQuestion{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90%;
+.flashcardQuestion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
 }
 
-
-.flashcardContainer img{
-    height: 150px;
+.flashcardContainer img {
+  height: 150px;
 }
 
-
-.rank{
-    height: 10%;
-    /* border: 3px solid #eeeeee; */
+.rank {
+  height: 10%;
 }
 
-
-
-.buttonContainer{
-    width: 40%;
-    height: 30%;
-    /* background-color: #eeeeee; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:80px;
-    /* justify-content: space-evenly; */
+.buttonContainer {
+  width: 90%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  justify-content: space-evenly;
 }
 
-
-
-
-.buttonContainer button{
-    background-color: #FFA248;
-    cursor: pointer;
-    border: none;
-    border-radius: 1px;
-    height: 80px;
-    width: 80px;
-    min-width: fit-content;
-    border: 5px solid #E45E10;
-    font-family:'Press Start 2P', cursive;
-    font-size: 14px;
-    color: #E65E15;
-    text-shadow: 1px 1px #161616,
-    2px 2px #161616,
-    3px 3px #161616;
-    transition: all .2s step-start;
+.buttonContainer button {
+  background-color: #ffa248;
+  cursor: pointer;
+  border: none;
+  border-radius: 1px;
+  height: 80px;
+  width: 80px;
+  min-width: fit-content;
+  border: 5px solid #e45e10;
+  font-family: "Press Start 2P", cursive;
+  font-size: 20px;
+  color: #e65e15;
+  text-shadow: 1px 1px #161616, 2px 2px #161616, 3px 3px #161616,
+    4px 4px #161616;
+  transition: all 0.2s step-start;
 }
 
-
-.buttonContainer button:hover{
- transform: scale(102%);
+.buttonContainer button:active {
+  transform: scale(96%);
 }
 
-.buttonContainer button:active{
-    transform: scale(96%);
+.formContainer {
+  display: flex;
+  justify-content: center;
 }
 
-.countBox{
-    background-color: #FFA248;
-    border: 5px solid #E45E10;
-    height: 80px;
-    min-width: 80px;
-    width: fit-content;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family:'Press Start 2P', cursive;
-    font-size: 28px;
-    padding: 10px;
-    cursor: pointer;
+.formContainer button {
+  font-size: 40px;
+  transform: none;
+  border: 7px solid #e45e10;
 }
 
+.formContainer button:active {
+  transform: scale(96%);
+}
 
+.countBox {
+  background-color: #ffa248;
+  border: 5px solid #e45e10;
+  height: 80px;
+  min-width: 80px;
+  width: fit-content;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Press Start 2P", cursive;
+  font-size: 28px;
+  padding: 10px;
+  cursor: pointer;
+  color: #e45e10;
+  text-shadow: 1px 1px #161616, 2px 2px #161616, 3px 3px #161616,
+    4px 4px #161616, 5px 5px #161616;
+}
 
+.guessInput {
+  border: 5px solid #eeeeee;
+  padding: 10px;
+  background-color: #161616;
+  box-sizing: border-box;
+  height: 80px;
+  min-width: 160px;
+  color: #eeeeee;
+  font-family: "Press Start 2P", cursive;
+  outline: none;
+  font-size: 16px;
+  text-transform: uppercase;
+}
 
+.guessFormContainer {
+  display: flex;
+  box-sizing: border-box;
+}
 
+#correct {
+  color: green;
+  border: 5px solid green;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#wrong {
+  color: red;
+  border: 4px solid red;
+}
 
 /* Responsiveness for mobile version */
 
-
-
 /* Medium Mobile */
-@media only screen and (max-width: 395px){
+@media only screen and (max-width: 395px) {
+  .titleSection {
+    height: fit-content;
+    padding: 5px;
+    max-height: 45vh;
+  }
 
-    .titleSection{
-        height: fit-content;
-        padding: 5px;
-        max-height: 45vh;
-    }
+  .titleSection h1 {
+    font-size: 1em;
+  }
 
-    .titleSection h1{
-        font-size: 1em;
-        /* line-height: 1.2; */
-    }
-
-    .titleSection p{
-        font-size: 12px;
-    }
-
+  .titleSection p {
+    font-size: 12px;
+  }
 }
 
 /* Responsiveness: larger mobile */
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
+  body {
+    background: url("./images/SuperMarioBackdrop.jpg") no-repeat top bottom
+      center;
+  }
 
-    body{
-        background: url('./images/SuperMarioBackdrop.jpg') no-repeat top bottom center ;
-    }
+  .titleSection {
+    height: fit-content;
+    padding: 0.1em;
+  }
 
+  .titleSection h1 {
+    font-size: 1.5em;
+    line-height: 1.2;
+  }
 
-    .titleSection{
-        height: fit-content;
-        padding: .1em;
-    }
+  .titleSection p {
+    font-size: 12px;
+  }
 
-
-    .titleSection h1{
-        font-size: 1.5em;
-        line-height: 1.2;
-    }
-
-    .titleSection p{
-        font-size: 12px;
-    }
-
-
-    .buttonContainer{
-        gap:40px;
-    }
-
-
+  .buttonContainer {
+    gap: 40px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
 }
-
 
 /* Responsiveness: Tablet */
-@media only screen and (max-width: 768px){
-    .titleSection{
-        height: fit-content;
-        padding: 1em;
-    }
+@media only screen and (max-width: 768px) {
+  .titleSection {
+    height: fit-content;
+    padding: 1em;
+  }
 
+  .flashcardContainer {
+    width: 100%;
+  }
 
+  .buttonContainer {
+    width: 100%;
+    /* background-color: #eeeeee; */
+    gap: 20px;
+  }
 
-    .flashcardContainer{
-        width: 100%;
-    }
+  .guessInput {
+    width: 300px;
+  }
 }
 
-
-
-
 /* Responsiveness: 4k desktop edgecase */
-@media only screen and (max-width: 2560px){
-    body{
-        background: url('./images/SuperMarioBackdrop.jpg') center bottom fixed;
-    }
+@media only screen and (max-width: 2560px) {
+  body {
+    background: url("./images/SuperMarioBackdrop.jpg") center bottom fixed;
+  }
 }
