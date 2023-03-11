@@ -36,7 +36,6 @@ export default function Flashcards() {
 
     const downCount = () => {
         setCheckedAnswer('');
-        // document.getElementById("create-course-form").reset();
         if (FlashCards[count].id > FlashCards[0].id) {
             setCount(count - 1)
             setCurrentCard(FlashCards[count])
@@ -62,7 +61,6 @@ export default function Flashcards() {
             setAnswer(false);
             setTrueCard(currentCard);
         }
-        // setTrueCard(drinksJson.drinks[randomDrinkIndex].ingredients);
 
     }
 
@@ -74,7 +72,7 @@ export default function Flashcards() {
 
 
     const onCheckAnswer = () => {
-        // console.log("test")
+
         if (currentCard.answer == inputs['answer']) {
             setCheckedAnswer('correct');
             console.log("Correct");
@@ -94,7 +92,6 @@ export default function Flashcards() {
                     {currentCard.image}
                 </div>
                 {currentCard == FlashCards[0] ? "" : <div className='rank'>Difficulty: {currentCard.difficulty}</div>}
-                {/* <div className='rank'>Difficulty: {currentCard.difficulty}</div> */}
             </div>
 
             <div className='buttonContainer'>
@@ -107,7 +104,6 @@ export default function Flashcards() {
                         }))}
                         label='answer'
                         correct_answer={correct_answer}
-                    // setText(e.target.value.charAt(0).toUpperCase() + e.target.value.slice(1));
                     ></GuessForm>
                     <button type='submit' onClick={onCheckAnswer} className="formButton">?</button>
                 </div>

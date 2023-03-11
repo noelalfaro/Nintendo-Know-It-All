@@ -1,8 +1,8 @@
-# Web Development Project 2 - Flashcards
+# Web Development Project 3 - Nintendo Know it All
 
 Submitted by: Noel Alfaro
 
-This is a web app built using React emulating a flashcard study game. It is based around Mario and is intended to test your knowledge of the Nintendo Franchise
+This is a web app built using React emulating a flashcard study game. It is based around Mario and is intended to test your knowledge of the Nintendo Franchise. The game lets you guess and gives feedback if you guess wrong or right, and lets you browse through the list of cards.
 
 Time spent: **6** hours spent in total
 
@@ -10,34 +10,33 @@ Time spent: **6** hours spent in total
 
 The following **required** functionality is completed:
 
-- [x] **The title of the card set and some information about it, such as a short description and the total number of cards are displayed**
-- [x] **A single card at a time is displayed, only showing one of the components of the information pair**
-- [x] **A list of card pairs is created**
-- [x] **Clicking on the card shows the corresponding component of the information pair**
-- [x] **Clicking the next button displays a random new card**
+- [x] **The user can enter their guess in a box before seeing the flipside of the card**
+- [x] **Clicking on a submit button shows visual feedback about whether the answer was correct or incorrect**
+- [x] **A back button is displayed on the card and can be used to return to the previous card in a set sequence**
+- [x] **A next button is displayed on the card and can be used to navigate to the next card in a set sequence**
 
 The following **optional** features are implemented:
 
-- [x] Cards contains images in addition to or in place of text
-- [x] Cards have different visual styles such as color based on their category
-  - [x] Difficulty ranking displayed at the bottom of each card
+- [ ] A shuffle button is used to randomize the order of the cards
+- [ ] A user's answer may be counted as correct even when it is slightly different from the target answer
+- [ ] A counter displays the user's current and longest streak of correct responses
+- [ ] A user can mark a card that they have mastered and have it removed from the pool of answers as well as added to a list of mastered cards
 
 The following **additional** features are implemented:
 
-* [x] The site is also responsive to Mobile and Tablet sizes
+- [x] To decrease frustration, all answers submitted are submitted as uppercase, therefore when compared to the real answer which is also uppercase therefore more variations of the same answer are accepted as correct.
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented required features:
+Here's a walkthrough of implemented user stories:
 
-<img src='src/images/gif-kapture.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-GIF created with ...  
-[Kap](https://getkap.co/) for macOS
+<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
+GIF created with Kap (https://getkap.co/) for macOS
 
 ## Notes
 
-I had trouble figuring out how to get the card to display the answer when the user would click on it but using state and conditional rendering made a lot more sense after doing a bit of research behind it!
+Figuring out how to compare the users input with the list of answers based on the corresponding card was difficult at first, after going over the lab and trying to emulate the steps taken there it did seem to make more sense.
 
 ## License
 
