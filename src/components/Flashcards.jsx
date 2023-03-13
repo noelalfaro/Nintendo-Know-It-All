@@ -72,7 +72,6 @@ export default function Flashcards() {
 
 
     const onCheckAnswer = () => {
-
         if (currentCard.answer == inputs['answer']) {
             setCheckedAnswer('correct');
             console.log("Correct");
@@ -80,6 +79,7 @@ export default function Flashcards() {
         } else {
             setCheckedAnswer('wrong');
             console.log("Wrong");
+            setAnswer(true);
         }
     }
 

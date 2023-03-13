@@ -159,13 +159,47 @@ body {
 }
 
 #correct {
-  color: green;
-  border: 5px solid green;
+  color: white;
+  background-color: green;
+  border: 5px solid #161616;
+  animation: one-up 0.5s;
 }
 
 #wrong {
-  color: red;
-  border: 4px solid red;
+  color: white;
+  background-color: red;
+  border: 5px solid #161616;
+  animation: horizontal-shaking 0.5s;
+}
+
+@keyframes one-up {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes horizontal-shaking {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(3px);
+  }
+  50% {
+    transform: translateX(-3px);
+  }
+  75% {
+    transform: translateX(3px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 /* Responsiveness for mobile version */
