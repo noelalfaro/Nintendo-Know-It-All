@@ -28,7 +28,7 @@ export default function Flashcards() {
     });
 
 
-    const [count, setCount] = useState(1);
+    const [count, setCount] = useState(0);
     const [currentCard, setCurrentCard] = useState(FlashCards[0]);
     const [answer, setAnswer] = useState(false);
     const [trueCard, setTrueCard] = useState({});
