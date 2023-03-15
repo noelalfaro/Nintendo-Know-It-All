@@ -37,29 +37,33 @@ export default function Flashcards() {
     const downCount = () => {
         setCheckedAnswer('');
         if (FlashCards[count].id > FlashCards[0].id) {
-            setCount(count - 1)
-            setCurrentCard(FlashCards[count])
+            setCurrentCard(FlashCards[count - 1])
             setAnswer(false)
+            setTrueCard(currentCard);
+            setCount(count - 1)
 
-        } if (currentCard.id == 1) {
+        } if (FlashCards[count].id == 0) {
             setCount(FlashCards.length - 1)
             setCurrentCard(FlashCards[count]);
             setAnswer(false);
+            setTrueCard(currentCard);
         }
     }
 
     const upCount = () => {
         setCheckedAnswer('');
         if (FlashCards[count].id < FlashCards.length - 1) {
-            setCount(count + 1);
-            setCurrentCard(FlashCards[count]);
+            // setCount(count + 1);
+            setCurrentCard(FlashCards[count + 1]);
             setAnswer(false);
             setTrueCard(currentCard);
+            setCount(count + 1)
         } else {
-            setCount(0);
+
             setCurrentCard(FlashCards[count])
             setAnswer(false);
             setTrueCard(currentCard);
+            setCount(0);
         }
 
     }
